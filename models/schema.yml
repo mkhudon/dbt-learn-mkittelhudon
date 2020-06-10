@@ -62,9 +62,6 @@ models:
           - not_null
 
       - name: status
-        tests:
-          - accepted_values:
-              values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
 
       - name: customer_id
         tests:
@@ -89,10 +86,6 @@ models:
               field: order_id
 
       - name: payment_method
-        tests:
-          - not_null
-          - accepted_values:
-              values: ['credit_card', 'coupon', 'gift_card', 'bank_transfer']
 
       - name: status
         tests:
@@ -101,9 +94,5 @@ models:
               values: ['success']
 
       - name: amount
-        tests:
-          - not_null
 
       - name: created
-        tests:
-          - not_null
